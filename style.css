@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Original Styles */
+
+/* Style the body tag to modify the font family and font size properties */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Style the header tag to modify the background color property */
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Style the nav tag to modify the background color property */
+nav {
+  background-color: #ccc;
+}
+
+/* Style the main tag to modify the background color and font size property */
+main {
+  background-color: #fff;
+  font-size: 14px;
+  padding: 20px;
+}
+
+/* Style the footer tag to modify the background color property */
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+/* Style the li tag to modify the display and width properties */
+li {
+  display: inline-block;
+  width: 100px;
+  margin-right: 10px;
+}
+
+/* Style the h1 tag to modify the text alignment, font family, and color properties */
+h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+}
+
+/* Style the p tag to modify the line height property */
+p {
+  line-height: 1.5;
+}
+
+/* Additional Styles for Specific Elements */
+
+/* Styling for the image elements */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the hover effect on images */
+img:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Styles for the nth-child selector */
+.main-images img:nth-child(odd) {
+  border-radius: 0;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Flex Layout */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styling for navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
